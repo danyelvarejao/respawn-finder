@@ -58,13 +58,7 @@ export class ItemsComponent implements OnInit {
     if (selectedItem.slot) {
       this.equippedItems[selectedItem.slot] = item;
     } else {
-      const alreadyUsedItem = this.usedItems.find(
-        element => element.name === selectedItem.name
-      );
-      if (alreadyUsedItem) {
-        return;
-      }
-
+      this.handleRemoveItem(item);
       this.usedItems.push(item);
     }
 
