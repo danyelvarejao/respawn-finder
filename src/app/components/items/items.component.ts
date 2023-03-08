@@ -4,7 +4,7 @@ import { items } from 'src/data';
 import { Item, Slot } from 'src/types';
 
 export const NOTIFY_MISSING_SECONDS = 30;
-export const NOTIFY_TIMES = 3;
+export const NOTIFY_TIMES = 1;
 
 interface ItemComponent extends Item {
   remainingSeconds: number;
