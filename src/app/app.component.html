@@ -1,47 +1,6 @@
-<main>
-  <div class="respawns">
-    <div class="search-box">
-      <h1>Search Respawn</h1>
-
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Name"
-        autofocus
-        #search
-        (input)="handleChangeSearchTerm(search.value)" />
-
-      <ul>
-        <li *ngFor="let town of towns; index as i">
-          <button
-            (click)="handleSelectTown(town)"
-            [class.pressed]="selectedTown === town">
-            {{ town.name }}
-          </button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="list-box">
-      <h1>Respawns</h1>
-
-      <ul>
-        <li *ngFor="let respawn of respawns; index as i">
-          <div class="respawn-info">
-            <h1>{{ respawn.name }}</h1>
-            <h2>{{ respawn.code }}</h2>
-            <h3>{{ respawn.town.name }}</h3>
-          </div>
-          <div class="claimed-buttons">
-            <button (click)="copyToClipboard(respawn)">Claim</button>
-            <button (click)="copyToClipboard(respawn, 'next')">Next</button>
-            <button (click)="copyToClipboard(respawn, 'del')">Del</button>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+<main class="app">
+  <app-respawns></app-respawns>
+  <app-items></app-items>
 </main>
 
 <footer>
@@ -50,6 +9,8 @@
     <a href="https://github.com/danyelvarejao" target="_blank"
       >Danyel Varejão</a
     >
+    and
+    <a href="https://github.com/xandymelo" target="_blank">Xandy Melo</a>
   </p>
   <p>Respawns updated at 05/03/2023</p>
 </footer>

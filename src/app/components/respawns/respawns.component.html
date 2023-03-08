@@ -1,0 +1,41 @@
+<div class="box search">
+  <h1>Search Respawn</h1>
+
+  <input
+    type="text"
+    name="name"
+    id="name"
+    placeholder="Name"
+    autofocus
+    #search
+    (input)="handleChangeSearchTerm(search.value)" />
+
+  <ul>
+    <li *ngFor="let town of towns; index as i">
+      <button
+        (click)="handleSelectTown(town)"
+        [class.pressed]="selectedTown === town">
+        {{ town.name }}
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="box respawns-list">
+  <h1>Respawns</h1>
+
+  <ul>
+    <li *ngFor="let respawn of respawns; index as i">
+      <div class="respawn-info">
+        <h1>{{ respawn.name }}</h1>
+        <h2>{{ respawn.code }}</h2>
+        <h3>{{ respawn.town.name }}</h3>
+      </div>
+      <div class="claimed-buttons">
+        <button (click)="copyToClipboard(respawn)">Claim</button>
+        <button (click)="copyToClipboard(respawn, 'next')">Next</button>
+        <button (click)="copyToClipboard(respawn, 'del')">Del</button>
+      </div>
+    </li>
+  </ul>
+</div>

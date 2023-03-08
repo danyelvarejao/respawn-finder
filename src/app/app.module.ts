@@ -5,9 +5,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
+import { RespawnsComponent } from './components/respawns/respawns.component';
+import { ItemsComponent } from './components/items/items.component';
+import { FormatSecondsPipe } from './pipes/format-seconds.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    RespawnsComponent,
+    ItemsComponent,
+    FormatSecondsPipe,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

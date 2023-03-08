@@ -18,11 +18,17 @@ export type Slot =
   | 'ring'
   | 'legs'
   | 'arrow'
-  | 'boots'
-  | 'item';
+  | 'boots';
+
+export interface Audios {
+  used?: string;
+  ending?: string;
+  finished?: string;
+}
 
 export interface Item {
   name: string;
   seconds: number;
-  slot: Slot;
+  slot?: Slot;
+  audios?: Audios;
 }

@@ -1,0 +1,52 @@
+<div class="box items-list">
+  <h1>Items</h1>
+
+  <button
+    class="item"
+    *ngFor="let item of items; index as i"
+    (click)="handleSelectItem(item)">
+    <img
+      src="../assets/images/items/{{ item.name.replaceAll(' ', '_') }}{{
+        item.slot ? '_Unequipped' : ''
+      }}.gif"
+      alt="Imagem do item {{ item.name }}" />
+  </button>
+</div>
+
+<div class="box items-used-list">
+  <h1>Items Used</h1>
+
+  <div class="buttons">
+    <ng-container *ngFor="let item of usedItems; index as i">
+      <button
+        (click)="handleResetTimer(item)"
+        (contextmenu)="handleRemoveItem(item, $event)">
+        <img
+          src="../assets/images/items/{{ item.name.replaceAll(' ', '_') }}.gif"
+          alt="Imagem do item {{ item.name }}" />
+        <span [class.finishing]="isFinishing(item)">{{
+          item.remainingSeconds | formatSeconds
+        }}</span>
+      </button>
+    </ng-container>
+  </div>
+
+  <div class="equipments">
+    <ng-container *ngFor="let item of equippedItems | keyvalue">
+      <div
+        class="{{ item.key }}"
+        *ngIf="item.value"
+        (click)="handleResetTimer(item.value)"
+        (contextmenu)="handleRemoveItem(item.value, $event)">
+        <img
+          src="../assets/images/items/{{
+            item.value.name.replaceAll(' ', '_')
+          }}.gif"
+          alt="Imagem do item {{ item.value.name }}" />
+        <span [class.finishing]="isFinishing(item.value)">{{
+          item.value.remainingSeconds | formatSeconds
+        }}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -884,45 +884,144 @@ export const items: Item[] = [
     name: 'Ring of Red Plasma',
     seconds: 30 * 60,
     slot: 'ring',
+    audios: {
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Collar of Red Plasma',
     seconds: 30 * 60,
     slot: 'amulet',
+    audios: {
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Ring of Green Plasma',
     seconds: 30 * 60,
     slot: 'ring',
+    audios: {
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Collar of Green Plasma',
     seconds: 30 * 60,
     slot: 'amulet',
+    audios: {
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Ring of Blue Plasma',
     seconds: 30 * 60,
     slot: 'ring',
+    audios: {
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Collar of Blue Plasma',
     seconds: 30 * 60,
     slot: 'amulet',
+    audios: {
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Mastermind Potion',
     seconds: 10 * 60,
-    slot: 'item',
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Bullseye Potion',
     seconds: 10 * 60,
-    slot: 'item',
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
   {
     name: 'Berserk Potion',
-    seconds: 10 * 60,
-    slot: 'item',
+    seconds: 1 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Death Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Earth Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Energy Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Fire Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Holy Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Ice Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
+  },
+  {
+    name: 'Physical Resilience',
+    seconds: 1 * 60 * 60,
+    audios: {
+      used: 'used_potion.ogg',
+      ending: 'ending_item.ogg',
+      finished: 'finished_item.ogg',
+    },
   },
 ];

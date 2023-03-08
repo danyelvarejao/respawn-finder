@@ -1,0 +1,174 @@
+:host {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 100%;
+  padding: 2rem;
+
+  .items-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    place-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .items-equipped-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+  }
+
+  .items-used-list {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      width: 100%;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+
+        position: relative;
+
+        > span {
+          position: absolute;
+          bottom: 0px;
+          right: 1px;
+
+          font-size: 1rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: bold;
+        }
+
+        .finishing {
+          color: #ff4f4f;
+        }
+      }
+    }
+
+    .equipments {
+      flex-shrink: 0;
+
+      width: 112px;
+      height: 147px;
+
+      background-image: url('../../../assets/images/equipments.png');
+      background-repeat: no-repeat;
+
+      position: relative;
+
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+          background: url('../../../assets/images/equipment-background.png');
+        }
+
+        > span {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          font-size: 1rem;
+          font-weight: bold;
+
+          pointer-events: none;
+        }
+
+        .finishing {
+          color: #ff4f4f;
+        }
+      }
+
+      .amulet {
+        position: absolute;
+        top: 18px;
+        left: 3px;
+      }
+
+      .helmet {
+        position: absolute;
+        top: 4px;
+        left: 40px;
+      }
+
+      .backpack {
+        position: absolute;
+        top: 18px;
+        right: 3px;
+      }
+
+      .weapon {
+        position: absolute;
+        top: 54px;
+        left: 3px;
+      }
+
+      .armor {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+
+      .shield {
+        position: absolute;
+        top: 54px;
+        right: 3px;
+      }
+
+      .ring {
+        position: absolute;
+        bottom: 25px;
+        left: 3px;
+      }
+
+      .legs {
+        position: absolute;
+        bottom: 39px;
+        left: 40px;
+      }
+
+      .arrow {
+        position: absolute;
+        bottom: 25px;
+        right: 3px;
+      }
+
+      .boots {
+        position: absolute;
+        bottom: 3px;
+        left: 40px;
+      }
+    }
+  }
+}
