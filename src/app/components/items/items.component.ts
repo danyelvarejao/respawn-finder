@@ -68,7 +68,7 @@ export class ItemsComponent implements OnInit {
       this.usedItems.push(item);
     }
 
-    this.playSound(item.audios?.used);
+    this.playSound(selectedItem.audios?.used);
   }
 
   handleResetTimer(item: ItemComponent) {
