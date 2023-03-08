@@ -1,4 +1,4 @@
-import { Respawn, Town } from './types';
+import { Respawn, Town, Item } from './types';
 
 export const towns: Town[] = [
   { name: "Ab'Dendriel" },
@@ -877,4 +877,52 @@ export const respawns: Respawn[] = [
   { code: '1169', name: 'Respawn 19', town: { name: 'Extra' } },
   { code: '1170', name: 'Respawn 20', town: { name: 'Extra' } },
   { code: '1171', name: 'Boosted Creature', town: { name: 'Extra' } },
+];
+
+export const items: Item[] = [
+  {
+    name: 'Ring of Red Plasma',
+    seconds: 30 * 60,
+    slot: 'ring',
+  },
+  {
+    name: 'Collar of Red Plasma',
+    seconds: 30 * 60,
+    slot: 'amulet',
+  },
+  {
+    name: 'Ring of Green Plasma',
+    seconds: 30 * 60,
+    slot: 'ring',
+  },
+  {
+    name: 'Collar of Green Plasma',
+    seconds: 30 * 60,
+    slot: 'amulet',
+  },
+  {
+    name: 'Ring of Blue Plasma',
+    seconds: 30 * 60,
+    slot: 'ring',
+  },
+  {
+    name: 'Collar of Blue Plasma',
+    seconds: 30 * 60,
+    slot: 'amulet',
+  },
+  {
+    name: 'Mastermind Potion',
+    seconds: 10 * 60,
+    slot: 'item',
+  },
+  {
+    name: 'Bullseye Potion',
+    seconds: 10 * 60,
+    slot: 'item',
+  },
+  {
+    name: 'Berserk Potion',
+    seconds: 10 * 60,
+    slot: 'item',
+  },
 ];
