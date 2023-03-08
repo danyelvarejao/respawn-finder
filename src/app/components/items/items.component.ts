@@ -15,10 +15,6 @@ interface ItemComponent extends Item {
   selector: 'app-items',
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.scss'],
-  providers: [
-    { provide: 'NOTIFY_MISSING_SECONDS', useValue: NOTIFY_MISSING_SECONDS },
-    { provide: 'NOTIFY_TIMES', useValue: NOTIFY_TIMES },
-  ],
 })
 export class ItemsComponent implements OnInit {
   public items: Item[] = items;
