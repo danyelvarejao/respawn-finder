@@ -885,6 +885,7 @@ export const items: Item[] = [
     seconds: 30 * 60,
     slot: 'ring',
     audios: {
+      used: 'equipped_item.ogg',
       ending: 'ending_item.ogg',
       finished: 'finished_item.ogg',
     },
@@ -894,6 +895,7 @@ export const items: Item[] = [
     seconds: 30 * 60,
     slot: 'amulet',
     audios: {
+      used: 'equipped_item.ogg',
       ending: 'ending_item.ogg',
       finished: 'finished_item.ogg',
     },
@@ -903,6 +905,7 @@ export const items: Item[] = [
     seconds: 30 * 60,
     slot: 'ring',
     audios: {
+      used: 'equipped_item.ogg',
       ending: 'ending_item.ogg',
       finished: 'finished_item.ogg',
     },
@@ -912,6 +915,7 @@ export const items: Item[] = [
     seconds: 30 * 60,
     slot: 'amulet',
     audios: {
+      used: 'equipped_item.ogg',
       ending: 'ending_item.ogg',
       finished: 'finished_item.ogg',
     },
@@ -921,6 +925,7 @@ export const items: Item[] = [
     seconds: 30 * 60,
     slot: 'ring',
     audios: {
+      used: 'equipped_item.ogg',
       ending: 'ending_item.ogg',
       finished: 'finished_item.ogg',
     },
@@ -930,6 +935,7 @@ export const items: Item[] = [
     seconds: 30 * 60,
     slot: 'amulet',
     audios: {
+      used: 'equipped_item.ogg',
       ending: 'ending_item.ogg',
       finished: 'finished_item.ogg',
     },
