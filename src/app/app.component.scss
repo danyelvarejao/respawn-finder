@@ -3,8 +3,31 @@
   flex-direction: row;
   align-items: self-start;
 
-  max-width: 130rem;
+  max-width: 140rem;
   margin: 0 auto;
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    flex: 3;
+
+    width: 100%;
+
+    padding: 2rem;
+  }
+
+  .right-side {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 100%;
+    padding: 2rem;
+  }
 
   @media screen and (max-width: 1080px) {
     flex-direction: column;

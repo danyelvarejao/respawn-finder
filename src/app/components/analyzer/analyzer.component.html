@@ -1,0 +1,53 @@
+<div class="box analyzer">
+  <h1>Party Hunt - Loot Analyzer</h1>
+
+  <div class="analyzer-example">
+    <img
+      src="../../../assets/images/analyser-example.png"
+      alt="Imagem mostrando um exemplo de como utilizar o analyzer" />
+  </div>
+
+  <input
+    type="text"
+    placeholder="Paste party hunt session log here..."
+    #data
+    (input)="handleChangeInput(data.value)" />
+
+  <ng-container *ngIf="analyzerData">
+    <div class="payments">
+      <div
+        class="payment"
+        *ngFor="
+          let whoToPayAndHowMuch of analyzerData.whoToPayAndHowMuch;
+          index as i
+        ">
+        <p>
+          {{ whoToPayAndHowMuch.name }} to pay
+          {{ whoToPayAndHowMuch.amount | formatMoney }} to
+          {{ whoToPayAndHowMuch.toWho }}
+        </p>
+        <button (click)="copyTransferToClipboard(whoToPayAndHowMuch)">
+          Copy Transfer
+        </button>
+      </div>
+    </div>
+
+    <div class="total-stats">
+      <p>
+        Total {{ analyzerData.totalProfitOrWaste > 0 ? 'profit' : 'waste' }}:
+        <span
+          class="{{ analyzerData.totalProfitOrWaste > 0 ? 'profit' : 'waste' }}"
+          >{{ analyzerData.totalProfitOrWaste | formatMoney }}</span
+        >
+        which is:
+        <span
+          class="{{
+            analyzerData.profitOrWastePerPlayer > 0 ? 'profit' : 'waste'
+          }}"
+          >{{ analyzerData.profitOrWastePerPlayer | formatMoney }}</span
+        >
+        for each player.
+      </p>
+    </div>
+  </ng-container>
+</div>

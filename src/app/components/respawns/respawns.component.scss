@@ -1,13 +1,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2rem;
-  flex: 3;
-
-  width: 100%;
-
-  padding: 2rem;
 
   .search {
     display: flex;
@@ -25,7 +19,7 @@
         width: 100%;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1290px) {
         grid-template-columns: repeat(4, 1fr);
       }
 

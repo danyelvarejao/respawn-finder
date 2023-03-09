@@ -32,3 +32,24 @@ export interface Item {
   slot?: Slot;
   audios?: Audios;
 }
+
+export interface AnalyzerPlayerAndTheirBalance {
+  name: string;
+  balance: number;
+}
+
+export interface AnalyzerWhoToPayAndHowMuch {
+  name: string;
+  amount: number;
+  toWho: string;
+}
+
+export interface AnalyzerData {
+  sessionDate: string;
+  sessionDuration: string;
+  numberOfPlayers: number;
+  playersAndTheirBalance: AnalyzerPlayerAndTheirBalance[];
+  totalProfitOrWaste: number;
+  profitOrWastePerPlayer: number;
+  whoToPayAndHowMuch: AnalyzerWhoToPayAndHowMuch[];
+}
