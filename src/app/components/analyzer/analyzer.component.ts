@@ -22,8 +22,6 @@ export class AnalyzerComponent {
     } else {
       this.analyzerData = null;
     }
-
-    console.log(this.analyzerData);
   }
 
   async copyTransferToClipboard(
@@ -38,7 +36,7 @@ export class AnalyzerComponent {
 
   private isValidAnalyzer(data: string) {
     if (
-      data.length < 50 ||
+      data.length < 128 ||
       !data.includes('Balance') ||
       !data.includes('Supplies') ||
       !data.includes('Loot') ||
