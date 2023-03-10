@@ -28,7 +28,6 @@ import { FormatMoneyPipe } from './pipes/format-money.pipe';
       timeOut: 2000,
       closeButton: true,
       progressBar: true,
-      preventDuplicates: true,
     }),
   ],
   providers: [],
