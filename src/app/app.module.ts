@@ -10,7 +10,7 @@ import { ItemsComponent } from './components/items/items.component';
 import { AnalyzerComponent } from './components/analyzer/analyzer.component';
 
 import { FormatSecondsPipe } from './pipes/format-seconds.pipe';
-import { FormatMoneyPipe } from './pipes/format-money.pipe';
+import { FormatNumberWithCommasPipe } from './pipes/format-number-with-commas.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { FormatMoneyPipe } from './pipes/format-money.pipe';
     ItemsComponent,
     AnalyzerComponent,
     FormatSecondsPipe,
-    FormatMoneyPipe,
+    FormatNumberWithCommasPipe,
   ],
   imports: [
     BrowserModule,

@@ -30,6 +30,22 @@ input {
   font-family: monospace;
 }
 
+textarea {
+  background: url('assets/images/background-dark.webp');
+  border: 0.1rem inset #767676;
+  border-color: #2d2d2d #767676 #767676 #2d2d2d;
+
+  outline: none;
+
+  color: white;
+  font-family: monospace;
+
+  padding: 0.5rem;
+  height: 2.7rem;
+
+  resize: none;
+}
+
 button {
   color: #d3d3d3;
   border: 0.1rem solid;

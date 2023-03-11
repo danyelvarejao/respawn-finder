@@ -33,23 +33,33 @@ export interface Item {
   audios?: Audios;
 }
 
-export interface AnalyzerPlayerAndTheirBalance {
+export type PartyReceipt = {
   name: string;
+  loot: number;
+  supplies: number;
   balance: number;
-}
+};
 
-export interface AnalyzerWhoToPayAndHowMuch {
-  name: string;
+export type PartyTransaction<ReferenceType> = {
+  from: ReferenceType;
+  to: ReferenceType;
   amount: number;
-  toWho: string;
-}
+};
 
-export interface AnalyzerData {
-  sessionDate: string;
-  sessionDuration: string;
-  numberOfPlayers: number;
-  playersAndTheirBalance: AnalyzerPlayerAndTheirBalance[];
-  totalProfitOrWaste: number;
-  profitOrWastePerPlayer: number;
-  whoToPayAndHowMuch: AnalyzerWhoToPayAndHowMuch[];
-}
+export type PartyExtraExpenses = Record<string, number>;
+
+export type PartyHistoryEntry = {
+  key: string;
+  timestamp: number;
+  rawData: string;
+  extraExpenses: PartyExtraExpenses;
+  removedPlayers: string[];
+};
+
+export type PartyHuntData = {
+  timestamp: number;
+  teamReceipt: PartyReceipt;
+  playerReceipts: PartyReceipt[];
+  transactions: PartyTransaction<string>[];
+  players: string[];
+};

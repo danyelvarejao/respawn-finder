@@ -7,26 +7,25 @@
       alt="Imagem mostrando um exemplo de como utilizar o analyzer" />
   </div>
 
-  <input
-    type="text"
+  <textarea
     placeholder="Paste party hunt session log here..."
     #data
-    (input)="handleChangeInput(data.value)" />
+    (input)="handleChangeInput(data.value)"></textarea>
 
-  <ng-container *ngIf="analyzerData">
+  <ng-container *ngIf="huntData">
     <div class="payments">
       <div
         class="payment"
-        *ngFor="
-          let whoToPayAndHowMuch of analyzerData.whoToPayAndHowMuch;
-          index as i
-        ">
+        *ngFor="let transaction of huntData.transactions; index as i">
         <p>
-          {{ whoToPayAndHowMuch.name }} to pay
-          {{ whoToPayAndHowMuch.amount | formatMoney }} to
-          {{ whoToPayAndHowMuch.toWho }}
+          {{ transaction.from }} to pay
+          <img
+            src="../../../assets/images/gold-coin.png"
+            alt="Imagem de um Gold Coin" />
+          {{ transaction.amount | formatNumberWithCommas }} to
+          {{ transaction.to }}
         </p>
-        <button (click)="copyTransferToClipboard(whoToPayAndHowMuch)">
+        <button (click)="copyTransferToClipboard(transaction)">
           Copy Transfer
         </button>
       </div>
@@ -34,17 +33,22 @@
 
     <div class="total-stats">
       <p>
-        Total {{ analyzerData.totalProfitOrWaste > 0 ? 'profit' : 'waste' }}:
+        Total {{ huntData.teamReceipt.balance > 0 ? 'profit' : 'waste' }}:
         <span
-          class="{{ analyzerData.totalProfitOrWaste > 0 ? 'profit' : 'waste' }}"
-          >{{ analyzerData.totalProfitOrWaste | formatMoney }}</span
+          class="{{ huntData.teamReceipt.balance > 0 ? 'profit' : 'waste' }}"
+          >{{ huntData.teamReceipt.balance | formatNumberWithCommas }}</span
         >
         which is:
         <span
           class="{{
-            analyzerData.profitOrWastePerPlayer > 0 ? 'profit' : 'waste'
+            huntData.teamReceipt.balance / huntData.players.length > 0
+              ? 'profit'
+              : 'waste'
           }}"
-          >{{ analyzerData.profitOrWastePerPlayer | formatMoney }}</span
+          >{{
+            huntData.teamReceipt.balance / huntData.players.length
+              | formatNumberWithCommas
+          }}</span
         >
         for each player.
       </p>
