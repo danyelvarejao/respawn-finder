@@ -21,6 +21,7 @@ interface BlessingComponent extends Blessing {
 })
 export class BlessingsComponent implements OnInit {
   public readonly characterNameInput = new Subject<string>();
+  public loadingCharacter = false;
 
   public blessings: BlessingComponent[] = [];
   public level?: number;
@@ -35,11 +36,14 @@ export class BlessingsComponent implements OnInit {
         return;
       }
 
+      this.loadingCharacter = true;
+
       this.http
         .get<CharactersResponse>(
           `${TIBIA_DATA_API_URL}/${API_VERSION}/character/${value}`
         )
         .subscribe(response => {
+          this.loadingCharacter = false;
           this.level = response.characters.character.level;
 
           this.calculateTotalPrice();

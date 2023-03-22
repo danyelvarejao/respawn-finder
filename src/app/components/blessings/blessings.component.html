@@ -2,24 +2,32 @@
   <h1>Blessings Price Calculator</h1>
 
   <div class="inputs">
-    <input
-      type="text"
-      name="character_name"
-      id="character_name"
-      placeholder="Character Name"
-      #inputCharacterName
-      (input)="handleChangeCharacterName(inputCharacterName.value)" />
+    <div class="input">
+      <input
+        type="text"
+        name="character_name"
+        id="character_name"
+        placeholder="Character Name"
+        #inputCharacterName
+        (input)="handleChangeCharacterName(inputCharacterName.value)" />
 
-    <input
-      type="number"
-      name="character_level"
-      id="character_level"
-      placeholder="Level"
-      min="1"
-      max="4000"
-      #inputLevel
-      value="{{ level }}"
-      (input)="handleChangeLevel(inputLevel.value)" />
+      <div class="icon-container" *ngIf="loadingCharacter">
+        <i class="loader"></i>
+      </div>
+    </div>
+
+    <div class="input">
+      <input
+        type="number"
+        name="character_level"
+        id="character_level"
+        placeholder="Level"
+        min="1"
+        max="4000"
+        #inputLevel
+        value="{{ level }}"
+        (input)="handleChangeLevel(inputLevel.value)" />
+    </div>
   </div>
 
   <ul class="blessings" *ngIf="level">
