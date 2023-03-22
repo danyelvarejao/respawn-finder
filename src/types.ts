@@ -63,3 +63,10 @@ export type PartyHuntData = {
   transactions: PartyTransaction<string>[];
   players: string[];
 };
+
+export type BlessingType = 'regular' | 'pvp' | 'enhanced';
+
+export type Blessing = {
+  name: string;
+  type: BlessingType;
+};

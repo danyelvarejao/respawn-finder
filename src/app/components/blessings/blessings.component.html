@@ -1,0 +1,69 @@
+<div class="box items-list">
+  <h1>Blessings Price Calculator</h1>
+
+  <div class="inputs">
+    <input
+      type="text"
+      name="character_name"
+      id="character_name"
+      placeholder="Character Name"
+      #name
+      (input)="handleChangeCharacterName(name.value)" />
+
+    <input
+      type="number"
+      name="character_level"
+      id="character_level"
+      placeholder="Level"
+      min="1"
+      #level
+      (input)="handleChangeLevel(level.value)" />
+  </div>
+
+  <ul class="blessings">
+    <li *ngFor="let blessing of blessings; index as i">
+      <div class="blessing">
+        <button
+          [class.pressed]="blessing.selected"
+          (click)="handleToggleSelectedBlessing(blessing)">
+          <h1>{{ blessing.name }}</h1>
+          <img
+            src="../../../assets/images/blessings/{{
+              blessing.name.replaceAll(' ', '_')
+            }}.gif"
+            alt="Imagem da blessing {{ blessing.name }}" />
+        </button>
+
+        <span [class.disabled]="!blessing.selected">
+          Price: {{ getBlessingCost(blessing) | formatNumberWithCommas }}
+
+          <img
+            src="../../../assets/images/gold-coin.png"
+            alt="Imagem de um Gold Coin" />
+        </span>
+      </div>
+    </li>
+  </ul>
+
+  <div class="npc">
+    <button
+      [class.pressed]="buyingFromHenricus"
+      (click)="handleToggleBuyingFromHenricus()">
+      <h1>NPC Inquisition</h1>
+      <img
+        src="../../../assets/images/npcs/Henricus.gif"
+        alt="Imagem do NPC da Inquisition Quest" />
+    </button>
+
+    <div class="prices">
+      <h1 *ngIf="buyingFromHenricus">Total price buying from NPC Henricus:</h1>
+      <h1 *ngIf="!buyingFromHenricus">Total price buying from each NPC:</h1>
+      <div class="price">
+        <img
+          src="../../../assets/images/gold-coin.png"
+          alt="Imagem de um Gold Coin" />
+        <span>{{ totalPrice | formatNumberWithCommas }}</span>
+      </div>
+    </div>
+  </div>
+</div>

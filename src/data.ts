@@ -1,4 +1,15 @@
-import { Respawn, Town, Item } from './types';
+import { Respawn, Town, Item, Blessing } from './types';
+
+export const blessings: Blessing[] = [
+  { name: 'The Embrace of Tibia', type: 'regular' },
+  { name: 'The Fire of the Suns', type: 'regular' },
+  { name: 'The Spark of the Phoenix', type: 'regular' },
+  { name: 'The Spiritual Shielding', type: 'regular' },
+  { name: 'The Wisdom of Solitude', type: 'regular' },
+  { name: 'Twist of Fate', type: 'pvp' },
+  { name: 'Blood of the Mountain', type: 'enhanced' },
+  { name: 'Heart of the Mountain', type: 'enhanced' },
+];
 
 export const towns: Town[] = [
   { name: "Ab'Dendriel" },
