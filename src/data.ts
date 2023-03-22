@@ -971,7 +971,7 @@ export const items: Item[] = [
   },
   {
     name: 'Berserk Potion',
-    seconds: 1 * 60,
+    seconds: 10 * 60,
     audios: {
       used: 'used_potion.ogg',
       ending: 'ending_item.ogg',
