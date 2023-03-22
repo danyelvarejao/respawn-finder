@@ -23,20 +23,25 @@ export class BlessingsComponent implements OnInit {
   public readonly characterNameInput = new Subject<string>();
 
   public blessings: BlessingComponent[] = [];
-  public level = 0;
+  public level?: number;
   public buyingFromHenricus = true;
   public totalPrice = 0;
 
   constructor(private readonly http: HttpClient) {}
 
   ngOnInit() {
-    this.characterNameInput.pipe(debounceTime(500)).subscribe(value => {
+    this.characterNameInput.pipe(debounceTime(300)).subscribe(value => {
+      if (!value || value.length === 0) {
+        return;
+      }
+
       this.http
         .get<CharactersResponse>(
           `${TIBIA_DATA_API_URL}/${API_VERSION}/character/${value}`
         )
         .subscribe(response => {
           this.level = response.characters.character.level;
+
           this.calculateTotalPrice();
         });
     });
@@ -76,7 +81,7 @@ export class BlessingsComponent implements OnInit {
   }
 
   getBlessingCost(blessing: Blessing) {
-    let blessingCost = getBlessingCost(blessing, this.level);
+    let blessingCost = getBlessingCost(blessing, this.level || 8);
     if (this.buyingFromHenricus && blessing.type === 'regular') {
       blessingCost *= 1.1;
     }

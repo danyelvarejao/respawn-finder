@@ -7,8 +7,8 @@
       name="character_name"
       id="character_name"
       placeholder="Character Name"
-      #name
-      (input)="handleChangeCharacterName(name.value)" />
+      #inputCharacterName
+      (input)="handleChangeCharacterName(inputCharacterName.value)" />
 
     <input
       type="number"
@@ -16,11 +16,13 @@
       id="character_level"
       placeholder="Level"
       min="1"
-      #level
-      (input)="handleChangeLevel(level.value)" />
+      max="4000"
+      #inputLevel
+      value="{{ level }}"
+      (input)="handleChangeLevel(inputLevel.value)" />
   </div>
 
-  <ul class="blessings">
+  <ul class="blessings" *ngIf="level">
     <li *ngFor="let blessing of blessings; index as i">
       <div class="blessing">
         <button
@@ -45,7 +47,7 @@
     </li>
   </ul>
 
-  <div class="npc">
+  <div class="npc" *ngIf="level">
     <button
       [class.pressed]="buyingFromHenricus"
       (click)="handleToggleBuyingFromHenricus()">
