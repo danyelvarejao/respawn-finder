@@ -11,7 +11,7 @@ html {
 
 body {
   color: #d3d3d3;
-  background: url('assets/images/background.webp');
+  background: url('assets/images/background.png');
 
   font-family: 'Verdana', sans-serif;
   font-size: 1.6rem;
@@ -22,7 +22,7 @@ body {
 input {
   width: 100%;
   color: white;
-  background: url('assets/images/background-dark.webp');
+  background: url('assets/images/background-dark.png');
   border: 0.1rem inset #767676;
   border-color: #2d2d2d #767676 #767676 #2d2d2d;
   outline: none;
@@ -41,7 +41,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 textarea {
-  background: url('assets/images/background-dark.webp');
+  background: url('assets/images/background-dark.png');
   border: 0.1rem inset #767676;
   border-color: #2d2d2d #767676 #767676 #2d2d2d;
 
@@ -58,15 +58,21 @@ textarea {
 
 button {
   color: #d3d3d3;
-  border: 0.1rem solid;
-  border-image: url('assets/images/button.webp') 1 fill;
+  border-top: 1px solid #737373;
+  border-right: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2d2d2d;
+  border-left: 1px solid#717272;
+  background-image: url('./assets/images/background.png');
   font-family: monospace;
   padding: 0.4rem;
 }
 
 button:active,
 .pressed {
-  border-image: url('assets/images/button-pressed.webp') 1 fill;
+  border-top: 1px solid #282828;
+  border-right: 1px solid #757575;
+  border-bottom: 1px solid #737374;
+  border-left: 1px solid#303030;
 }
 
 ul {
@@ -90,7 +96,7 @@ ul {
 .box {
   border-style: solid;
   border-width: 1.8rem 0.4rem 0.4rem;
-  border-image: url('./assets/images/widget-border.webp') 15 4 4 repeat;
+  border-image: url('./assets/images/widget-border.png') 15 4 4 repeat;
 
   position: relative;
 
