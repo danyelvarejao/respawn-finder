@@ -24,9 +24,10 @@
         <img
           src="../assets/images/items/{{ item.name.replaceAll(' ', '_') }}.gif"
           alt="Imagem do item {{ item.name }}" />
-        <span [class.finishing]="isFinishing(item)">{{
-          item.remainingSeconds | formatSeconds
-        }}</span>
+
+        <span [class.finishing]="isFinishing(item)">
+          {{ item.remainingSeconds | formatSeconds }}
+        </span>
       </button>
     </ng-container>
   </div>
@@ -43,9 +44,10 @@
             item.value.name.replaceAll(' ', '_')
           }}.gif"
           alt="Imagem do item {{ item.value.name }}" />
-        <span [class.finishing]="isFinishing(item.value)">{{
-          item.value.remainingSeconds | formatSeconds
-        }}</span>
+
+        <span [class.finishing]="isFinishing(item.value)">
+          {{ item.value.remainingSeconds | formatSeconds }}
+        </span>
       </div>
     </ng-container>
   </div>
