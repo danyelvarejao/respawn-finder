@@ -9,7 +9,7 @@ import { calculateHuntData } from 'src/utils/party-hunt';
   styleUrls: ['./analyzer.component.scss'],
 })
 export class AnalyzerComponent {
-  constructor(private readonly toastrService: ToastrService) {}
+  constructor(private readonly toastService: ToastrService) {}
 
   public huntData?: PartyHuntData | null;
 
@@ -22,6 +22,6 @@ export class AnalyzerComponent {
 
     await navigator.clipboard.writeText(text);
 
-    this.toastrService.success(`Transfer successfully copied.`);
+    this.toastService.success(`Transfer successfully copied.`);
   }
 }
