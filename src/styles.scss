@@ -24,7 +24,6 @@ input {
   color: white;
   background: url('assets/images/background-dark.png');
   border: 0.1rem inset #767676;
-  border-color: #2d2d2d #767676 #767676 #2d2d2d;
   outline: none;
   padding: 0.5rem;
   font-family: monospace;
@@ -43,8 +42,6 @@ input[type=number]::-webkit-outer-spin-button {
 textarea {
   background: url('assets/images/background-dark.png');
   border: 0.1rem inset #767676;
-  border-color: #2d2d2d #767676 #767676 #2d2d2d;
-
   outline: none;
 
   color: white;
