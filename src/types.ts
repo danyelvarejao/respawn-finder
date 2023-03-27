@@ -48,14 +48,6 @@ export type PartyTransaction<ReferenceType> = {
 
 export type PartyExtraExpenses = Record<string, number>;
 
-export type PartyHistoryEntry = {
-  key: string;
-  timestamp: number;
-  rawData: string;
-  extraExpenses: PartyExtraExpenses;
-  removedPlayers: string[];
-};
-
 export type PartyHuntData = {
   timestamp: number;
   teamReceipt: PartyReceipt;
