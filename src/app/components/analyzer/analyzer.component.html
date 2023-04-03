@@ -14,9 +14,7 @@
 
   <ng-container *ngIf="huntData">
     <div class="payments">
-      <div
-        class="payment"
-        *ngFor="let transaction of huntData.transactions; index as i">
+      <div class="payment" *ngFor="let transaction of huntData.transactions">
         <p>
           {{ transaction.from }} to pay
           <img
@@ -25,9 +23,54 @@
           {{ transaction.amount | formatNumberWithCommas }} to
           {{ transaction.to }}
         </p>
-        <button (click)="copyTransferToClipboard(transaction)">
-          Copy Transfer
-        </button>
+
+        <div class="buttons">
+          <button
+            class="remove-player"
+            (click)="handleRemovePlayer(transaction.to)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <button
+            (click)="copyTransferToClipboard(transaction)"
+            class="copy-transfer">
+            Copy Transfer
+          </button>
+        </div>
+      </div>
+
+      <div class="payment" *ngFor="let removedPlayer of removedPlayers">
+        <p class="line-through">
+          {{ removedPlayer }}
+        </p>
+
+        <div class="buttons">
+          <button class="add-player" (click)="handleAddPlayer(removedPlayer)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+
+          <button class="copy-transfer" disabled>Copy Transfer</button>
+        </div>
       </div>
     </div>
 

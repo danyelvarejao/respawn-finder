@@ -100,29 +100,28 @@ const findTransactionsRequired = (
   return transactions;
 };
 
-export const calculateHuntData = (session: string): PartyHuntData | null => {
+export const calculateHuntData = (
+  session: string,
+  removedPlayers: Set<string>
+): PartyHuntData | null => {
   try {
-    const playerReceipts = parse
-      .playerReceipts(session)
-      .map(({ supplies, balance, ...rest }) => {
-        return {
-          ...rest,
-          supplies: supplies,
-          balance: balance,
-        };
-      });
+    const playerReceipts = parse.playerReceipts(session);
+
+    const filteredPlayerReceipts = playerReceipts.filter(
+      ({ name }) => !removedPlayers.has(name)
+    );
 
     return {
-      teamReceipt: playerReceipts.reduce((acc, player) => ({
+      teamReceipt: filteredPlayerReceipts.reduce((acc, player) => ({
         name: 'Team',
         loot: acc.loot + player.loot,
         supplies: acc.supplies + player.supplies,
         balance: acc.balance + player.balance,
       })),
       playerReceipts,
-      transactions: findTransactionsRequired(playerReceipts),
+      transactions: findTransactionsRequired(filteredPlayerReceipts),
       timestamp: parse.sessionTimestamp(session),
-      players: playerReceipts.map(({ name }) => name),
+      players: filteredPlayerReceipts.map(({ name }) => name),
     };
   } catch {
     return null;
