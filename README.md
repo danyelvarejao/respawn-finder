@@ -1,27 +1,45 @@
-# Angular
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/danyelvarejao/respawn-finder.svg" />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/danyelvarejao/respawn-finder.svg" />
 
-## Development server
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/danyelvarejao/respawn-finder.svg" />
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  <a href="https://github.com/danyelvarejao/respawn-finder/commits/production">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/danyelvarejao/respawn-finder.svg" />
+  </a>
 
-## Code scaffolding
+  <a href="https://github.com/danyelvarejao/respawn-finder/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/danyelvarejao/respawn-finder.svg" />
+  </a>
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="./.github/respawn-finder-preview.png" width="100%" />
 
-## Build
+## 💻 Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Site com ferramentas que auxiliam o jogador de Tibia.
 
-## Running unit tests
+* Respawn Finder - Busca respawn pelo nome.
+* Items Timer - Temporizador de items, envia uma notificação via som quando o item estiver prestes a acabar.
+* Party Hunt - Calcula o quanto de (waste/profit) a hunt deu e o quanto cada jogador tem que pagar para os membros da party.
+* Blessings Price Calculate - Calcula o preço da bless baseado no level do jogador.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ⚙ Tecnologias
+-  [AngularJS](https://angular.io/)
+-  [Sass](https://sass-lang.com/)
+-  [TypeScript](https://www.typescriptlang.org/)
 
-## Running end-to-end tests
+Também foi adicionado a ferramenta [**ESLint**](https://eslint.org/) para aumentar a produtividade e auxiliar a manter um padrão de código.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📥 Instalação e execução
 
-## Further help
+Faça um clone desse repositório e acesse o diretório.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+# Instalando as dependências
+$ yarn
+
+# Executanto aplicação
+$ yarn start
+```
