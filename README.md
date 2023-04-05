@@ -26,11 +26,11 @@ Site com ferramentas que auxiliam o jogador de Tibia.
 * Blessings Price Calculate - Calcula o preço da bless baseado no level do jogador.
 
 ## ⚙ Tecnologias
--  [AngularJS](https://angular.io/)
--  [Sass](https://sass-lang.com/)
--  [TypeScript](https://www.typescriptlang.org/)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-Também foi adicionado a ferramenta [**ESLint**](https://eslint.org/) para aumentar a produtividade e auxiliar a manter um padrão de código.
+Também foi adicionado as ferramentas [**ESLint**](https://eslint.org/) e [**Prettier**](https://prettier.io/) para aumentar a produtividade e auxiliar a manter um padrão de código.
 
 ## 📥 Instalação e execução
 
