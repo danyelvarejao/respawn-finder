@@ -1,16 +1,16 @@
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/danyelvarejao/respawn-finder.svg" />
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/danyelvarejao/respawn-finder" />
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/danyelvarejao/respawn-finder.svg" />
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/danyelvarejao/respawn-finder" />
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/danyelvarejao/respawn-finder.svg" />
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/danyelvarejao/respawn-finder" />
 
   <a href="https://github.com/danyelvarejao/respawn-finder/commits/production">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/danyelvarejao/respawn-finder.svg" />
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/danyelvarejao/respawn-finder/production" />
   </a>
 
   <a href="https://github.com/danyelvarejao/respawn-finder/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/danyelvarejao/respawn-finder.svg" />
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/danyelvarejao/respawn-finder" />
   </a>
 </p>
 
