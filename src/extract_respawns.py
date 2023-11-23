@@ -29,6 +29,12 @@ input_string = """
      [62f] Cobra Bastion (0 e +1)
      [62g] Cobra Bastion (+2, +3 e +4)
      [62h] Cobra Bastion (+3 e +4)
+     [63a] Weretiger (-1)
+     [63b] Weretiger (-2)
+     [63c] Weretiger (-1 e -2)
+     [64a] Werecrocodile (-1)
+     [64b] Werecrocodile (-2)
+     [64c] Werecrocodile (-1 e -2)
  Carlin:
      [100] Corym
      [101] Cults
@@ -74,6 +80,11 @@ input_string = """
      [163b] Werelion -2
      [163c] Werelion -2 ->
      [163d] Werelion -2 <-
+     [164a] Rotten Blood (Blood Vestibule)
+     [164b] Rotten Blood (Darklight Core)
+     [164c] Rotten Blood (Gloom Pillars)
+     [164d] Rotten Blood (Jaded Roots)
+     [164e] Rotten Blood (Putrefactory)
  Edron:
      [200] Asharak Demon
      [201] Bog Raider (Cave Earth Elemental)

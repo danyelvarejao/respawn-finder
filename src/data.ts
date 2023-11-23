@@ -89,6 +89,36 @@ export const respawns: Respawn[] = [
     name: 'Cobra Bastion (+3 e +4)',
     town: { name: 'Ankrahmun' },
   },
+  {
+    code: '63a',
+    name: 'Weretiger (-1)',
+    town: { name: 'Ankrahmun' }
+  },
+  {
+    code: '63b',
+    name: 'Weretiger (-2)',
+    town: { name: 'Ankrahmun' }
+  },
+  {
+    code: '63c',
+    name: 'Weretiger (-1 e -2)',
+    town: { name: 'Ankrahmun' }
+  },
+  {
+    code: '64a',
+    name: 'Werecrocodile (-1)',
+    town: { name: 'Ankrahmun' }
+  },
+  {
+    code: '64b',
+    name: 'Werecrocodile (-2)',
+    town: { name: 'Ankrahmun' }
+  },
+  {
+    code: '64c',
+    name: 'Werecrocodile (-1 e -2)',
+    town: { name: 'Ankrahmun' }
+  },
   { code: '100', name: 'Corym', town: { name: 'Carlin' } },
   { code: '101', name: 'Cults', town: { name: 'Carlin' } },
   { code: '102', name: 'Demona', town: { name: 'Carlin' } },
@@ -172,6 +202,11 @@ export const respawns: Respawn[] = [
   { code: '163b', name: 'Werelion -2', town: { name: 'Darashia' } },
   { code: '163c', name: 'Werelion -2 ->', town: { name: 'Darashia' } },
   { code: '163d', name: 'Werelion -2 <-', town: { name: 'Darashia' } },
+  { code: '164a', name: 'Rotten Blood (Blood Vestibule)', town: { name: 'Darashia' }},
+  { code: '164b', name: 'Rotten Blood (Darklight Core)', town: { name: 'Darashia' }},
+  { code: '164c', name: 'Rotten Blood (Gloom Pillars)', town: { name: 'Darashia' }},
+  { code: '164d', name: 'Rotten Blood (Jaded Roots)', town: { name: 'Darashia' }},
+  { code: '164e', name: 'Rotten Blood (Putrefactory)', town: { name: 'Darashia' }},
   { code: '200', name: 'Asharak Demon', town: { name: 'Edron' } },
   {
     code: '201',
