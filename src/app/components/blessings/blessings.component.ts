@@ -44,7 +44,7 @@ export class BlessingsComponent implements OnInit {
         )
         .subscribe(response => {
           this.loadingCharacter = false;
-          this.level = response.characters.character.level;
+          this.level = response.character.character.level;
 
           this.calculateTotalPrice();
         });

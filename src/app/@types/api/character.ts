@@ -42,7 +42,7 @@ interface AccountInformation {
 }
 
 interface CharactersResponse {
-  characters: {
+  character: {
     character: Character;
     account_information: AccountInformation;
     other_characters?: OtherCharacter[];
