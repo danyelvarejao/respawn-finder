@@ -41,16 +41,20 @@ interface AccountInformation {
   loyalty_title?: string;
 }
 
-interface CharactersResponse {
+interface CharacterResponse {
   character: {
     character: Character;
     account_information: AccountInformation;
     other_characters?: OtherCharacter[];
   };
   information: {
-    api_version: number;
-    timestamp: string;
+    timestamp: Date;
+    status: {
+      http_code: number;
+      error: number;
+      message: string;
+    };
   };
 }
 
-export { AccountInformation, Character, CharactersResponse, Guild, House };
+export { AccountInformation, Character, CharacterResponse, Guild, House };

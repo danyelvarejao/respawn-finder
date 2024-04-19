@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Subject, debounceTime } from 'rxjs';
-import { CharactersResponse } from 'src/app/@types/api/character';
+import { CharacterResponse } from 'src/app/@types/api/character';
 
 import { API_VERSION } from 'src/constants';
 import { TIBIA_DATA_API_URL } from 'src/constants';
@@ -39,14 +39,19 @@ export class BlessingsComponent implements OnInit {
       this.loadingCharacter = true;
 
       this.http
-        .get<CharactersResponse>(
+        .get<CharacterResponse>(
           `${TIBIA_DATA_API_URL}/${API_VERSION}/character/${value}`
         )
-        .subscribe(response => {
-          this.loadingCharacter = false;
-          this.level = response.character.character.level;
+        .subscribe({
+          next: response => {
+            this.loadingCharacter = false;
 
-          this.calculateTotalPrice();
+            this.level = response.character.character.level;
+            this.calculateTotalPrice();
+          },
+          error: () => {
+            this.loadingCharacter = false;
+          },
         });
     });
 
