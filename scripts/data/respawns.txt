@@ -1,0 +1,453 @@
+Ab'Dendriel
+1 Barkless
+2 Hellgate
+3 Poacher Cave
+4 Troll
+5 Wasp
+
+Ankrahmun
+50a Ancient Scarab North
+50b Ancient Scarab West
+51 GS Tomb
+52 Gold Token
+53 Hydra (Passage)
+55 Mother of Scarabs Lair
+56 Oasis Tomb
+57 Peninsula Tomb
+58 Rahemos
+59 Stone Tomb
+60 Terramite
+61 Vashresamun
+62a Cobra Bastion (-1)
+62b Cobra Bastion (0 e +1 até flask)
+62c Cobra Bastion (-1 after do flask +2 +3 e +4)
+62d Cobra Bastion (Mini Boss Fire)
+62e Cobra Bastion (Mini Boss Smoke)
+62f Cobra Bastion (0 e +1)
+62g Cobra Bastion (+2 +3 e +4)
+62h Cobra Bastion (+3 e +4)
+63a Weretiger (-1)
+63b Weretiger (-2)
+63c Weretiger (-1 e -2)
+64a Werecrododile (-1)
+64b Werecrododile (-2)
+64c Werecrododile (-1 e -2)
+
+Carlin
+100 Corym
+101a Cults -1
+101b Cults -2
+101c Cults -3
+104a Secret Library (Biting Book)
+104b Secret Library (Earth)
+104c Secret Library (Energy)
+104d Secret Library (Fire)
+104e Secret Library (Ice)
+
+Candia
+1154 Candia Surface
+1155 Chocolate Mines
+1156 Dessert Dungeon
+
+Darashia
+150 Ancient Scarabs Tomb
+151 Cults & Lizards
+152 Dragon
+153 Dragon Lord
+154a Drefia Grim Reaper Floor 1
+154b Drefia Grim Reaper Floor 1+2
+154c Drefia Grim Reaper Floor All
+155a Ferumbra's South
+155b Ferumbra's Arc
+155c Ferumbra's DT Seal
+155d Ferumbra's Fury Seal
+155e Ferumbra's Jugger Seal
+155f Ferumbra's Lair Entrance
+155g Ferumbra's Plague Seal
+155h Ferumbra's Pumin
+155i Ferumbra's Undead Seal
+155j Ferumbra's Bazir Seal
+155k Ferumbra's DT Seal -1
+155l Ferumbra's Pumin After
+155m Ferumbra's Pumin Before
+156 Haunted Nexus Darashia
+157 Nightmare Isles
+158a Rotworm East
+158b Rotworm West
+159a Skeleton Elite Warrior Inside
+159b Skeleton Elite Warrior Outside
+160 Terramite's Cave
+161 Wyrm
+162a Werehyaena -1
+162b Werehyaena -2 North
+162c Werehyaena -2 South
+163a Werelion -1
+163b Werelion -2
+163c Werelion -2 ->
+163d Werelion -2 <-
+164a Rotten Blood Blood Vestibule
+164b Rotten Blood Darklight Core
+164c Rotten Blood Gloom Pillars
+164d Rotten Blood Jaded Roots
+164e Rotten Blood Putrefactory
+165 Lion's Rock
+
+Edron
+
+200 Asharak Demon
+201 Bog Raider Cave Earth Elemental
+202 Bog Raider East Hidden
+203a Cyclopolis
+203b Cyclopolis Behemoths
+204 Demon Demon Helmet Quest
+205 Demon Novo
+206 Demon Forge
+207 Dragon Lair
+208 Dryad Gardens
+209 Earth Elemental
+210a Elemental Quest - Soil ED
+210b Elemental Quest - Soil EK
+210c Elemental Quest - Soil MS
+210d Elemental Quest - Soil RP
+211a Falcon Bastion
+211b Falcon Mini-Bosses
+211c Falcon Underground
+212 Flimsy
+213 Forgotten Tomb
+214 Grimvale
+215a Hero Fortress -1 Bonebeast
+215b Hero Fortress -2
+215c Hero Fortress -2 e -3
+215d Hero Fortress -3
+216a Inquisition
+216b Inquisition Hellhound
+217 Servants Mad Mage
+218 Shaburak Demons
+219 Vampire Crypt
+220 Werefox Cave
+221 Zugurosh
+222 Usurper East
+223 Bounac
+224 Ancient Lion Knight
+225 Crypt Warden
+226 Carnisylvan
+227a Ingol Surface
+227b Ingol -1
+227c Ingol -2
+227d Ingol -3
+227e Ingol -4
+1157 Podzilla Rootthings -1
+1158 Podzilla Rootthings -2
+1159 Podzilla Quaras -1
+1160 Podzilla Quaras -2
+1161a Inferniarchs Surface e -1 Tree
+1161b Inferniarchs -2
+1161c Inferniarchs -3
+1161d Inferniarchs -4
+
+Farmine
+250a Brimstone Bug Hidden
+250b Brimstone Bug Shovel
+250c Brimstone Bug Surface
+250d Brimstone Bug Wrath
+251a Corruption Hole -1
+251b Corruption Hole -2
+253a Dragon Lord Antes do TP
+253b Dragon Lord Depois do TP
+254 Dragonblaze
+255 Draken Elite
+256a Draken Wall
+256b Draken Wall Bottom
+256c Draken Wall Top
+256d Draken Wall Tower Meio
+257a Flimsy -1
+258a Ghastly Dragon
+258b Ghastly Dragon Mission 10
+258c Ghastly Dragon Mission 7
+258d Ghastly Dragon Palace
+259 Gold Token
+260 Hidden Lizards Mission 7
+262 Lizard Camp Muggy Plains
+263 Lizard Chosen New - 1 2 3
+264 Lizard Chosen New - 4 5
+265 Lizard City
+266 Lizards Mortal Kombat
+267 Souleaters
+270 Wailing Widow Cave
+271 Yielothax
+1151 Mega Dragon Respawn 1
+1152 Mega Dragon Respawn 2
+
+Feyrist
+300 Dream Labyrinth Fire
+301 Dream Labyrinth Ice
+305a Mini Roshamuul -1
+305b Mini Roshamuul -2
+306 Summer Court
+307 Winter Court
+
+Goroma
+401 Dragon Lair
+406a Medusa -1 East
+406b Medusa -1 West e West
+406c Medusa East e Northeast
+406d Medusa North e Northwest
+
+Issavi
+500 Bridge West
+502a Sphinx Cave -1
+502b Sphinx Cave -2
+503 Underground Bueiro/Sewers
+504 Waterfall
+505a Pirat Ship -1
+505b Pirat Ship -2
+506a Pirat -1
+506b Pirat -2
+507a Exotic Cave -1
+507b Exotic Cave -2
+508 Ruins of Nuur Bilu
+509 Salt Caves Bashmu
+510 Goannas
+
+Krailos
+600 Brimstone Bugs
+601 Nightmare Krailos
+
+Marapur
+1100a Foam Stalker -1 -2
+1100b Foam Stalker -1
+1100c Foam Stalker -2
+1101a Naga -1 -2
+1101b Naga -1
+1101c Naga -2
+
+Gray Island
+450a Deathling Port Hope
+450b Deathling Cave -1
+450c Deathling Cave -2
+451a Deepling East
+451b Deepling North - Hardcore
+451c Deepling North
+451d Deepling South - Library
+451e Deepling West
+452 Hive Surface
+453a Hive Tower
+454 Hive Underground
+
+Kazordoon
+550 Corym
+551a Drillworms East
+551b Drillworms West
+552a Lost Dwarfs East
+552b Lost Dwarfs Small Respawn
+552c Lost Dwarfs West Up
+552d Lost Dwarfs West
+553 Lower Spikes
+
+Liberty Bay
+650 Behemoths
+651a Calassa Quara East
+651b Calassa Quara West
+652 Coryms
+653 Crystal Garden
+654 Cult
+655 Earth Elemental
+656 Gargoyles Meriana
+657 Hive Outpost
+658 Laguna Island
+659 Night Stalker -1
+660 Pirates Nargor
+661 Quara New
+662a Wyrms +1
+662b Wyrms +2
+663 Wyrms Cave New
+664 Zombie Treasure Island
+
+Oramond
+700a Catacombs
+700b Catacombs East
+700d Catacombs West
+701 Demons & Grim Reaper
+702 Devourer & Quaras West
+703 Fury & Spectre
+704a Glooth Bandits East
+704b Glooth Bandits South
+704c Glooth Bandits West
+705 Glooth Factory
+707 Glooth Tower
+709a Hydras & Bog Raider Deeper
+709b Hydras & Bog Raider Surface
+716a Seacrest East
+716b Seacrest North
+716c Seacrest West
+
+Roshamuul
+802a Guzzlemaw Valley Center
+802b Guzzlemaw Valley East
+802c Guzzlemaw Valley West
+803b Prison -1
+803c Prison -2
+803d Prison -3
+804a Roshamuul DP North
+804b Roshamuul DP South
+805a Roshamuul Mountain East
+805b Roshamuul Mountain North East
+805c Roshamuul Mountain South
+806 Shock Head
+807a Surface -3
+807b Surface Buckets - East
+807c Surface Buckets - West
+807d Surface Buckets
+
+Port Hope
+750a Asura (Mirror) Mirror
+750c Asura (Mirror) True -1
+750d Asura (Mirror) True -2
+750e Asura (Mirror) True All
+751 Asura Palace
+752b Banuta -1
+752c Banuta -2
+752d Banuta -3
+752e Banuta -4
+754a Carnivora's Rock -1
+754b Carnivora's Rock -2
+754c Carnivora's Rock -2 e -3
+754d Carnivora's Rock -3
+754e Carnivora's Rock -1 e -2
+757a Flimsy -1
+757b Flimsy -2
+758 Haunted Nexus Port Hope
+761 Medusa Tower
+762a Iks Entrada
+762b Iks Antes da Ponte das 3 vidas
+762c Iks Depois da Ponte das 3 vidas
+
+Svargrond
+850a Barbarian Camp (Big)
+850b Barbarian Camp (Medium)
+850c Barbarian Camp (Small)
+851 Crystal Spiders (Hidden)
+852 Crystal Spiders (New)
+853 Crystal Spiders (Nibelor)
+854 Crystal Spiders (Old)
+855 Crystal Spiders North (New)
+856 Crystal Spiders South (New)
+857 Cults Hidden
+858 Cults Mines (East)
+859 Cults Mines (North West)
+860 Frost Giant
+861 Gold Token
+862 Hidden Formogar Mines
+863 Ice Witch Temple (New)
+864 Mammoth Factory
+865 Mines -2
+866 Mines -3
+867 Mines South East -2
+868 Mines Yakchal Floor
+869a Okolnir Frost Dragons (East)
+869b Okolnir Frost Dragons (West)
+870a Sea Serpent North (Old Cave)
+870b Sea Serpent South (Old Cave)
+
+Thais
+900a Minotaur Cult Cave -1
+900b Minotaur Cult Cave -2
+902 Thais Fury
+
+Venore
+950 Amazon Camp
+951a Buried Cathedral -1
+951b Buried Cathedral -2
+951c Buried Cathedral -3
+952 Dark Cathedral
+953a Dragon Lair (East)
+953b Dragon Lair (West)
+954 Dragon Lord (POI)
+955a Flimsy -1
+955b Flimsy -2
+955c Flimsy -3
+955d Flimsy -2 e -3
+955e Flimsy -1, -2 e -3
+956 Haunted Nexus (PoH)
+957a Orc Fortress (Inside)
+957b Orc Fortress (Outside)
+958 Salamandra
+959 Stonerefiner
+960 Tainted Soul Cave
+1153 Bulltaurs [Respawn 3]
+
+Warzone
+1001 Crystal Grounds
+1002a Diremaw (North)
+1002b Diremaw (South)
+1003 Gnoman's Land
+1004 Gnomegate Hotspot
+1005 Mushroom Gardens
+1006 Warzone 3
+1007a Warzone 4
+1008a Warzone 5
+1009a Warzone 6
+1010a Warzone 7
+1011 Warzone 8
+1012a Warzone 9
+1013a Monster Graveyard (Left)
+1013c Monster Graveyard (Right)
+1014b Crystal Enigma (Left)
+1014c Crystal Enigma (Right)
+1015b Sparkling Pools (Left)
+1015c Sparkling Pools (Right)
+1016 Ravenous Lavalurker
+
+Yalahar
+1050 Arena Quarter
+1051 Barbarian Bloodwalker
+1052 Blue Djinn
+1053 Bog Raider (North)
+1054 Bog Raider + Nightmare + Destroyer
+1055 Cemetery -1
+1056a Cemetery Ghoul (East)
+1056b Cemetery Ghoul (West)
+1057 Cemetery Zombies
+1058 Cults
+1059a Cycs Mistrock (Center)
+1059b Cycs Mistrock (North)
+1059c Cycs Mistrock (South)
+1060a Demon (East)
+1060b Demon (West)
+1061a Dragon (Hydra)
+1061b Dragon (NW)
+1061c Dragon (SE)
+1061d Dragon (Serpent)
+1062 Dragon Lord (Fenrock)
+1063 Giant Spider
+1064 Green Djinn
+1065 Grim Reaper
+1066 Haunted Treeling
+1067a Hellspawn (-1)
+1067b Hellspawn (Surface)
+1068 Magician
+1069 Minotaurs
+1070 Mutated Human
+1071 Mutated Rat
+1072a Necromancer (East)
+1072b Necromancer (West)
+1073 Nightmare
+1074 Pirates
+1075 Sunken Quaras
+1076 Tortoise & Barbarian (Fenrock)
+1077 Vengoth Castle
+1078 Vengoth Castle (North)
+1079 War Golem
+1080a War Golem New (East)
+1080b War Golem New (West)
+1081 Werewolf
+1082 Worker Golem
+1083 Claustrophobic Inferno
+1084a Rotten Wasteland
+1084b Rotten Wasteland (North)
+1084c Rotten Wasteland (South)
+1085 Ebb and Flow
+1086 Furious Crater
+1087 Mirrored Nightmare
+1088 Mutated Tiger (Arena -3)
+1089 Mutated Tiger & Bog Raider (North Alchemist)
