@@ -13,6 +13,7 @@ import { AnalyzerComponent } from './components/analyzer/analyzer.component';
 import { FormatSecondsPipe } from './pipes/format-seconds.pipe';
 import { FormatNumberWithCommasPipe } from './pipes/format-number-with-commas.pipe';
 import { BlessingsComponent } from './components/blessings/blessings.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BlessingsComponent } from './components/blessings/blessings.component';
     BlessingsComponent,
   ],
   imports: [
+    FormsModule,
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,

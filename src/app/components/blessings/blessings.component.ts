@@ -10,8 +10,16 @@ import { blessings } from 'src/data';
 import { Blessing } from 'src/types';
 import { getBlessingCost } from 'src/utils/blessings';
 
+const SHARED_EXPERIENCE_FACTOR = 1.5;
+const MAX_LEVEL = 9999;
+
 interface BlessingComponent extends Blessing {
   selected: boolean;
+}
+
+interface SharedExperience {
+  min: number;
+  max: number;
 }
 
 @Component({
@@ -27,6 +35,8 @@ export class BlessingsComponent implements OnInit {
   public level?: number;
   public buyingFromHenricus = true;
   public totalPrice = 0;
+
+  public sharedExperience: SharedExperience | null = null;
 
   constructor(private readonly http: HttpClient) {}
 
@@ -48,6 +58,7 @@ export class BlessingsComponent implements OnInit {
 
             this.level = response.character.character.level;
             this.calculateTotalPrice();
+            this.calculateSharedExperience();
           },
           error: () => {
             this.loadingCharacter = false;
@@ -63,18 +74,26 @@ export class BlessingsComponent implements OnInit {
     });
 
     this.calculateTotalPrice();
+    this.calculateSharedExperience();
   }
 
   handleChangeCharacterName(value: string) {
     this.characterNameInput.next(value);
 
     this.calculateTotalPrice();
+    this.calculateSharedExperience();
   }
 
   handleChangeLevel(value: string) {
-    this.level = +value;
+    const level = +value;
+    if (!level || level <= 0 || level > MAX_LEVEL) {
+      return;
+    }
+
+    this.level = level;
 
     this.calculateTotalPrice();
+    this.calculateSharedExperience();
   }
 
   handleToggleSelectedBlessing(blessing: BlessingComponent) {
@@ -104,5 +123,17 @@ export class BlessingsComponent implements OnInit {
       }
       return total;
     }, 0);
+  }
+
+  private calculateSharedExperience() {
+    if (!this.level || this.level <= 0 || this.level > MAX_LEVEL) {
+      this.sharedExperience = null;
+      return;
+    }
+
+    const min = Math.ceil(this.level / SHARED_EXPERIENCE_FACTOR);
+    const max = Math.floor(this.level * SHARED_EXPERIENCE_FACTOR);
+
+    this.sharedExperience = { min, max };
   }
 }

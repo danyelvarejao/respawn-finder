@@ -22,11 +22,30 @@
         name="character_level"
         id="character_level"
         placeholder="Level"
-        min="1"
-        max="4000"
         #inputLevel
         value="{{ level }}"
         (input)="handleChangeLevel(inputLevel.value)" />
+    </div>
+
+    <div class="shared-experience-container" *ngIf="sharedExperience">
+      <div class="title">
+        <img
+          src="../../../assets/images/shared-icon.gif"
+          alt="Imagem do shield de shared experience" />
+        <span>Shared Experience</span>
+      </div>
+
+      <div class="description">
+        <div class="min">
+          <span>Min:</span>
+          <span>{{ sharedExperience.min }}</span>
+        </div>
+
+        <div class="max">
+          <span>Max:</span>
+          <span>{{ sharedExperience.max }}</span>
+        </div>
+      </div>
     </div>
   </div>
 

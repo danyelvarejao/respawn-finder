@@ -9,10 +9,11 @@
     padding: 1rem;
 
     display: flex;
+    align-items: flex-start;
     gap: 0.4rem;
 
     .input {
-      width: 100%;
+      flex: 1;
       position: relative;
 
       .icon-container {
@@ -48,6 +49,38 @@
             background: transparent;
           }
         }
+      }
+    }
+
+    .shared-experience-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 140px;
+      border: 0.1rem inset #767676;
+      background: url('../../../assets/images/background-dark.png');
+      padding: 0.5rem;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        > span {
+          display: block;
+          color: rgb(0, 240, 0);
+          font-size: 8pt;
+          font-weight: bold;
+          text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.08em, rgb(0, 0, 0) -0.1em -0.1em 0.08em, rgb(0, 0, 0) 0.1em -0.1em 0.08em, rgb(0, 0, 0) -0.1em 0.1em 0.08em, rgb(0, 0, 0) -0.1em 0px 0.08em, rgb(0, 0, 0) 0.1em 0px 0.08em;
+        }
+      }
+
+      .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+        font-size: 1.1rem;
       }
     }
   }
