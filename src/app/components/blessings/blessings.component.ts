@@ -10,7 +10,6 @@ import { blessings } from 'src/data';
 import { Blessing } from 'src/types';
 import { getBlessingCost } from 'src/utils/blessings';
 
-const SHARED_EXPERIENCE_FACTOR = 1.5;
 const MAX_LEVEL = 9999;
 
 interface BlessingComponent extends Blessing {
@@ -131,8 +130,8 @@ export class BlessingsComponent implements OnInit {
       return;
     }
 
-    const min = Math.ceil(this.level / SHARED_EXPERIENCE_FACTOR);
-    const max = Math.floor(this.level * SHARED_EXPERIENCE_FACTOR);
+    const min = Math.ceil((this.level / 3) * 2);
+    const max = Math.floor((this.level / 2) * 3);
 
     this.sharedExperience = { min, max };
   }
